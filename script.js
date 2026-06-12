@@ -1,13 +1,11 @@
 let plantas = 0;
 
 const tipos = [
-  "🌱​",
+  "🌱",
   "🌾",
   "🌻",
   "🌿",
   "🍀"
-  "🏵️",
-  "🌸"
 ];
 
 function plantar(){
