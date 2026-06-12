@@ -1,0 +1,217 @@
+body{
+  margin:0;
+  font-family:Verdana,sans-serif;
+  background:linear-gradient(#87ceeb,#bde8ff);
+  overflow-x:hidden;
+}
+
+/* NUVENS ANIMADAS */
+
+.nuvem{
+  position:fixed;
+
+  background:white;
+
+  border-radius:50px;
+
+  opacity:0.8;
+
+  z-index:-1;
+}
+
+.nuvem::before,
+.nuvem::after{
+  content:"";
+  position:absolute;
+
+  background:white;
+
+  border-radius:50%;
+}
+
+.nuvem1{
+  width:150px;
+  height:60px;
+
+  top:80px;
+
+  animation:nuvemAndando 35s linear infinite;
+}
+
+.nuvem1::before{
+  width:70px;
+  height:70px;
+
+  left:20px;
+  top:-25px;
+}
+
+.nuvem1::after{
+  width:60px;
+  height:60px;
+
+  right:20px;
+  top:-20px;
+}
+
+.nuvem2{
+  width:180px;
+  height:70px;
+
+  top:220px;
+
+  animation:nuvemAndando 50s linear infinite;
+}
+
+.nuvem2::before{
+  width:80px;
+  height:80px;
+
+  left:25px;
+  top:-25px;
+}
+
+.nuvem2::after{
+  width:70px;
+  height:70px;
+
+  right:25px;
+  top:-20px;
+}
+
+@keyframes nuvemAndando{
+
+  from{
+    left:-250px;
+  }
+
+  to{
+    left:110%;
+  }
+
+}
+
+/* CABEÇALHO */
+
+header{
+  text-align:center;
+  padding:70px 20px;
+  position:relative;
+  z-index:1;
+}
+
+header h1{
+  color:#2e7d32;
+  font-size:3rem;
+}
+
+header p{
+  font-size:1.1rem;
+}
+
+/* BLOCOS DECORATIVOS */
+
+.bloco{
+  position:absolute;
+
+  width:60px;
+  height:60px;
+
+  background:#f7c948;
+
+  border:4px solid #d49b00;
+
+  box-shadow:4px 4px 0 #b8860b;
+}
+
+.bloco1{
+  top:120px;
+  left:70px;
+}
+
+.bloco2{
+  top:200px;
+  right:100px;
+}
+
+/* CONTEÚDO */
+
+section{
+  background:white;
+
+  width:80%;
+  max-width:800px;
+
+  margin:30px auto;
+
+  padding:25px;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+  position:relative;
+  z-index:1;
+}
+
+h2{
+  color:#2e7d32;
+}
+
+/* BOTÃO */
+
+button{
+  background:#43a047;
+
+  color:white;
+
+  border:none;
+
+  padding:12px 20px;
+
+  border-radius:10px;
+
+  cursor:pointer;
+
+  font-size:16px;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+/* RODAPÉ */
+
+footer{
+  text-align:center;
+
+  background:#2e7d32;
+
+  color:white;
+
+  padding:20px;
+
+  position:relative;
+  z-index:1;
+}
+
+/* GRAMA */
+
+.grama{
+  height:70px;
+
+  background:
+  repeating-linear-gradient(
+    90deg,
+    #43a047 0px,
+    #43a047 20px,
+    #4caf50 20px,
+    #4caf50 40px
+  );
+}
+
+#jardim{
+  margin-top:20px;
+    font-size:2rem;
+  line-height:1.5;
+}
